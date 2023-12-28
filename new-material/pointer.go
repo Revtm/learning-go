@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"new-material/util"
+)
 
 type UserAccount struct {
 	Name   string
@@ -33,6 +36,7 @@ func testPointer() {
 
 	fmt.Println(user3)
 	fmt.Println(user4)
+	fmt.Println(util.GetStatusStr(user4.Status))
 }
 
 func main() {
